@@ -27,12 +27,12 @@ function selectOption(menuId, option) {
 function validateSelection() {
     const resultContainer = document.getElementById('resultContainer');
     const combination = `${selectedOptions.menu1}-${selectedOptions.menu2}-${selectedOptions.menu3}`;
-    let imageSrc = 'C:\Users\brand\brand.github.io\lambertrepare\deroulant.png';
+    let imageSrc ="C:\Users\brand\OneDrive\Documents\GitHub\reparation\assets\dreoulant.png";
     
 
     // Associer chaque combinaison d'options à une image spécifique
     if (combination === 'Option 1-Option 2-Option 3') {
-        imageSrc = 'C:\Users\brand\brand.github.io\lambertrepare\deroulant.png';
+        imageSrc = "C:\Users\brand\OneDrive\Documents\GitHub\reparation\assets\dreoulant.png";
     } else {
         imageSrc = '';
     }

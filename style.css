@@ -132,6 +132,7 @@ table {
 
 /* debut de mon css*/
 .desktop {
+	
 	width: 100%vw;
 	height: 100%wh;
 	gap: 0px;
@@ -209,7 +210,7 @@ a {
 	background-color: linear-gradient(180deg, #EAE2B7 0%, #FCBF49 100%);
 	height: 100%;
 	display: flex;
-	background-image: url(C:/Users/brand/OneDrive/Documents/GitHub/reparation/assets/outils.png);
+	background-image: url(../reparation/assets/outils.png);
 	background-size: cover;
 	align-items: center;
 }
