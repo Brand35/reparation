@@ -133,9 +133,8 @@ table {
 /* debut de mon css*/
 
 .desktop {
-
-	width: 100%vw;
-	height: 100%wh;
+	width:100vw;
+	height: 100vh;
 	gap: 0px;
 	opacity: 0px;
 }
@@ -300,14 +299,16 @@ h1 {
 	width: 20px;
 	height: 20px;
 }
-.search-form{
-	display:flex;
-	width:300px;
+
+.search-form {
+	display: flex;
+	width: 300px;
 }
+
 .result-container {
 	background-image: url(../reparation/assets/deroulant.png);
-	width:87%;
-	Height:82%;
+	width: 87%;
+	Height: 82%;
 	margin: 5%;
 	gap: 10%;
 	border: 1px solid #EAE2B7;
@@ -331,7 +332,7 @@ h1 {
 }
 
 .repar {
-padding: 10%;
+	padding: 10%;
 	grid-row: -2;
 	grid-column: 2;
 }
@@ -435,72 +436,71 @@ h5 {
 	background-color: #0056b3;
 }
 
-.carte{
-	display:flex;
+.carte {
+	display: flex;
 	justify-content: center;
 	align-content: center;
 	align-items: center;
 	flex-direction: column;
 }
-.local{
-	display:flex;
+
+.local {
+	display: flex;
 	justify-content: center;
-	flex-direction:row-reverse;
+	flex-direction: row-reverse;
 	gap: 5%;
 
 }
-.appel{
-	display:flex;
-	flex-direction:row-reverse;
+
+.appel {
+	display: flex;
+	flex-direction: row-reverse;
 	justify-content: center;
 	gap: 5%;
 }
-.mail{
-		display:flex;
-	flex-direction:row-reverse;
+
+.mail {
+	display: flex;
+	flex-direction: row-reverse;
 	justify-content: center;
 	gap: 5%;
 
 }
-.carousel{
+
+.carousel {
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: 2fr;
-	width: Fixed (1,313.61px)px;
-height: Fixed (819px)px;
-top: 2958px;
-left: 58.22px;
-gap: 20px;
-opacity: 0px;
-flex-direction: column;
+	justify-items: center;
 }
 
-h9{
-	font-size:40px;
+h9 {
+	font-size: 40px;
 }
+
 #carousel-image-0 {
-    transform: translateX(-50%) translateX(30%) scale(1);
-    filter: brightness(100%);
-    z-index: 1;
+	transform: translateX(-50%) translateX(30%) scale(1);
+	filter: brightness(100%);
+	z-index: 1;
 }
 
 #carousel-image-1 {
-    transform: translateX(-50%) translateX(40%) scale(1);
-    filter: brightness(100%);
-    opacity: 1;
-    z-index: 2;
+	transform: translateX(-50%) translateX(40%) scale(1);
+	filter: brightness(100%);
+	opacity: 1;
+	z-index: 2;
 }
 
 #carousel-image-2 {
-    transform: translateX(0%) scale(1);
-    filter: brightness(100%);
-    opacity: 1;
-    z-index: 3;
+	transform: translateX(0%) scale(1);
+	filter: brightness(100%);
+	opacity: 1;
+	z-index: 3;
 }
 
 #carousel-image-3 {
-    transform: translateX(-50%) translateX(60%) scale(1);
-    filter: brightness(100%);
-    opacity: 1;
-    z-index: 2;
+	transform: translateX(-50%) translateX(60%) scale(1);
+	filter: brightness(100%);
+	opacity: 1;
+	z-index: 2;
 }
