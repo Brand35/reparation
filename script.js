@@ -32,7 +32,7 @@ function validateSelection() {
 
     // Associer chaque combinaison d'options à une image spécifique
     if (combination === 'Option 1-Option 2-Option 3') {
-        imageSrc = "C:\Users\brand\OneDrive\Documents\GitHub\reparation\assets\dreoulant.png";
+        imageSrc = "";
     } else {
         imageSrc = '';
     }
@@ -46,7 +46,7 @@ function validateSelection() {
             <li>${selectedOptions.menu3}</li>
         </ul>`;
     if (imageSrc) {
-        resultContainer.innerHTML += `<img src="${imageSrc}" alt="${combination}">`;
+        resultContainer.innerHTML += `<img src="${imageSrc}" alt="${imageSrc}">`;
     } else {
         resultContainer.innerHTML += `<p>Aucune image disponible pour cette combinaison.</p>`;
     }

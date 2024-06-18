@@ -131,8 +131,9 @@ table {
 }
 
 /* debut de mon css*/
+
 .desktop {
-	
+
 	width: 100%vw;
 	height: 100%wh;
 	gap: 0px;
@@ -213,17 +214,18 @@ a {
 	background-image: url(../reparation/assets/outils.png);
 	background-size: cover;
 	align-items: center;
+	justify-content: flex-end;
 }
 
 h1 {
-	width: 100%;
-	height: 90%;
-	
-	font-size: 80px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	width: 50%;
+	height: 50%;
+	font-size: 60px;
 	font: 'Nico Moji';
 	text-align: center;
-	position: absolute;
-	top: 60%;
 }
 
 .button-container {
@@ -243,31 +245,22 @@ h1 {
 	justify-content: center;
 	align-items: flex-start;
 	position: absolute;
-	top: 94%;
+	top: 92%;
 	background-color: linear-gradient(180deg, #EAE2B7 0%, #FCBF49 100%);
-}
-
-
-body,
-html {
-	margin: 0;
-	padding: 0;
-	height: 100%;
-	font-family: Arial, sans-serif;
 }
 
 
 
 .dropdown-button {
-	width: 80px;
+	border-radius: 40px;
 	background-color: #4CAF50;
 	color: white;
 	padding: 10px;
 	margin: 5px;
 	border: none;
 	cursor: pointer;
-	width: 150px;
-	justify-content: space-between;
+	width: 172px;
+	justify-content: space-around;
 	display: flex;
 }
 
@@ -293,12 +286,11 @@ html {
 }
 
 .search-container {
-	margin-top: 20px;
+	margin-top: 3px;
 }
 
 .search-button {
 	background-color: #EAE2B7;
-	;
 	border: none;
 	padding: 10px;
 	cursor: pointer;
@@ -308,19 +300,207 @@ html {
 	width: 20px;
 	height: 20px;
 }
-
+.search-form{
+	display:flex;
+	width:300px;
+}
 .result-container {
-	width: 90%;
-	Height: 50%;
+	background-image: url(../reparation/assets/deroulant.png);
+	width:87%;
+	Height:82%;
 	margin: 5%;
 	gap: 10%;
 	border: 1px solid #EAE2B7;
-	margin-top: 20px;
+	margin-top: 0px;
 	justify-content: center;
-	display: block;
-	
+	display: none;
+
 }
-.person{
+
+.qui {
+	background: linear-gradient(180deg, #EAE2B7 0%, #FCBF49 100%);
 	width: 100%;
 	display: grid;
+	grid-template-columns: 2fr;
+	grid-template-rows: 2fr;
+}
+
+.autre {
+	width: 60%;
+	margin: auto;
+}
+
+.repar {
+padding: 10%;
+	grid-row: -2;
+	grid-column: 2;
+}
+
+h2 {
+	text-align: center;
+	font-size: 40px;
+	margin: auto;
+}
+
+h3 {
+	text-align: center;
+	font-size: 16px;
+	margin: auto;
+}
+
+.autre1 {
+	width: 60%;
+	margin: auto;
+	align-items: center;
+}
+
+h4 {
+	text-align: center;
+	font-size: 40px;
+	margin: auto;
+}
+
+h5 {
+	text-align: center;
+	font-size: 16px;
+	margin: auto;
+	justify-content: space-between;
+}
+
+.video {
+	width: 642px;
+	height: 331px;
+	top: 5px;
+	gap: 0px;
+	border-radius: 20px 0px 0px 0px;
+	opacity: 0px;
+	margin: 10%;
+	grid-row: 2;
+	grid-column: 1;
+}
+
+.help {
+	background: #003049;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.contact-form {
+	align-self: center;
+	background-color: #f7ab07;
+	padding: -2%;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	width: 100%;
+	max-width: 620px;
+	margin: 3%;
+}
+
+.contact-form h2 {
+	margin-top: 0;
+}
+
+.contact-form .form-group {
+	margin-bottom: 15px;
+}
+
+.contact-form .form-group label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.contact-form .form-group input,
+.contact-form .form-group textarea {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+}
+
+.contact-form .form-group textarea {
+	resize: vertical;
+}
+
+.contact-form button {
+	padding: 10px 15px;
+	background-color: #007BFF;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.contact-form button:hover {
+	background-color: #0056b3;
+}
+
+.carte{
+	display:flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.local{
+	display:flex;
+	justify-content: center;
+	flex-direction:row-reverse;
+	gap: 5%;
+
+}
+.appel{
+	display:flex;
+	flex-direction:row-reverse;
+	justify-content: center;
+	gap: 5%;
+}
+.mail{
+		display:flex;
+	flex-direction:row-reverse;
+	justify-content: center;
+	gap: 5%;
+
+}
+.carousel{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 2fr;
+	width: Fixed (1,313.61px)px;
+height: Fixed (819px)px;
+top: 2958px;
+left: 58.22px;
+gap: 20px;
+opacity: 0px;
+flex-direction: column;
+}
+
+h9{
+	font-size:40px;
+}
+#carousel-image-0 {
+    transform: translateX(-50%) translateX(30%) scale(1);
+    filter: brightness(100%);
+    z-index: 1;
+}
+
+#carousel-image-1 {
+    transform: translateX(-50%) translateX(40%) scale(1);
+    filter: brightness(100%);
+    opacity: 1;
+    z-index: 2;
+}
+
+#carousel-image-2 {
+    transform: translateX(0%) scale(1);
+    filter: brightness(100%);
+    opacity: 1;
+    z-index: 3;
+}
+
+#carousel-image-3 {
+    transform: translateX(-50%) translateX(60%) scale(1);
+    filter: brightness(100%);
+    opacity: 1;
+    z-index: 2;
 }
