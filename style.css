@@ -557,9 +557,8 @@ h9 {
 	z-index: 2;
 }
 
-@media (max-width:360px) {
+@media (max-width:800px) {
 	.bandeau {
-		width: 135vw;
 		height: 10vh;
 		padding: 0px 20px 0px 20px;
 		gap: 0px;
@@ -581,7 +580,6 @@ h9 {
 
 	.logo1 {
 		display: flex;
-		width: 103px;
 		height: 77px;
 		padding: 0px 30px 0px 30px;
 		border-radius: 40px 0px 0px 0px;
@@ -594,7 +592,9 @@ h9 {
 		justify-content: center;
 		align-items: flex-start;
 	}
-
+.video{
+	width: 125vw;
+}
 	.sidenav {
 		display: flex;
 	}
@@ -605,7 +605,6 @@ h9 {
 
 	.hero {
 		display: flex;
-		width: 135vw;
 		height: 220px;
 
 	}
@@ -618,26 +617,16 @@ h9 {
 	}
 
 	.qui {
-		width: 135vw;
 		display: flex;
 		flex-direction: column;
 	}
 
-	.video {
-		width: 400px;
-		height: 257px;
-		border-radius: 20px;
-		display: flex;
-		justify-self: center;
-
-	}
 
 	h4 {
 		font-size: 30px;
 	}
 
 	.help {
-		width: 135vw;
 		display: flex;
 		flex-direction: column;
 		align-content: center;
@@ -651,7 +640,6 @@ h9 {
 
 	.carousel {
 		display: flex;
-		width: 135vw;
 
 	}
 }
