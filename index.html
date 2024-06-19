@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="fr">
+
 <head>
 
   <meta charset="utf-8">
@@ -9,12 +10,29 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
- 
+
 </head>
 
 <body>
   <div class="desktop">
+
     <div class="bandeau">
+      <div id="mySidenav" class="sidenav">
+        <a id="closeBtn" href="#" class="close">×</a>
+        <ul>
+          <li><a href="#">A propos</a></li>
+          <li><a href="#">Nos services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <a href="#" id="openBtn">
+        <span class="burger-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </a>
+      <img class="logo1" src="./assets/logom.png" alt="logom">
       <img class="logo" src="./assets/logo.png" alt="logo">
       <div class="block">
         <div class="nav">
@@ -107,22 +125,22 @@
       <div class="carte">
         <img class="map" src="./assets/carte.png" alt="">
         <div class="local">
-          <h6>123, rue de la reparation 35000 Rennes</h6>
+          <p>123, rue de la reparation 35000 Rennes</p>
           <img src="./assets/Pin.png" alt="">
         </div>
         <div class="appel">
-          <h7>02 99 xx xx xx</h7>
+          <p>02 99 xx xx xx</p>
           <img src="./assets/phone.png" alt="">
         </div>
         <div class="mail">
-          <h8>Lamber@gmail.com</h8>
+          <p>Lamber@gmail.com</p>
           <img src="./assets/Vector.png" alt="">
         </div>
         <img class="image" src="./assets/image.png" alt="">
       </div>
     </div>
     <div class="carousel">
-      <h9>Découvrez les avis de nos clients</h9>
+      <p>Découvrez les avis de nos clients</p>
       <div class="carousel-container">
         <img class="carousel-image" src="./assets/avis1.png" id="carousel-image-0" alt="">
         <img class="carousel-image" src="./assets/avis2.png" id="carousel-image-1" alt="">
@@ -131,6 +149,8 @@
       </div>
     </div>
   </div>
+  <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
+
+
 </html>

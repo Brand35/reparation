@@ -133,58 +133,113 @@ table {
 /* debut de mon css*/
 
 .desktop {
-	width:100vw;
+
+	width: 100vw;
 	height: 100vh;
-	gap: 0px;
-	opacity: 0px;
+}
+
+/* Sidenav menu */
+.sidenav {
+	height: 100%;
+	width: 250px;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: -250px;
+	background-color: #e8e8e8;
+	padding-top: 60px;
+	transition: left 0.5s ease;
+	display: none;
+}
+
+
+/* Sidenav menu links */
+.sidenav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+}
+
+.sidenav a:hover {
+	color: #111;
+}
+
+.sidenav ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+/* Active class */
+.sidenav.active {
+	left: 0;
+}
+
+/* Close btn */
+.sidenav .close {
+	right: 25px;
+	font-size: 36px;
+}
+
+/* Icône burger */
+.burger-icon span {
+	width: 35px;
+	height: 5px;
+	background-color: black;
+	margin: 6px 0;
+	display: none;
+}
+
+.logo1 {
+	display: none;
+}
+
+.logo {
+	display: flex;
+	width: 10%;
 }
 
 .bandeau {
 	display: flex;
-	width: Fixed (1, 440px)px;
-	height: Fixed (100px)px;
-
+	height: 10%;
 	padding: 0px 59px 0px 59px;
 	gap: 200px;
-	opacity: 0px;
+	top: 0;
 	background: linear-gradient(90deg, #003049 0%, #0073AF 100%);
+	justify-content: space-between;
+
 }
+
 
 .block {
 	display: flex;
-	width: Fixed (879px)px;
-	height: Hug (48.5px)px;
-	gap: 20px;
-	opacity: 0px;
-	align-items: center;
+	width: 50%;
+	justify-content: center;
+	align-items: end;
 }
 
 .nav {
 	width: 245px;
 	height: 48px;
-
 	gap: 0px;
-	opacity: 0px;
 	display: flex;
-	align-items: right;
 	color: #F77F00;
 }
 
 .nav1 {
 	width: 245px;
 	height: 48px;
-
 	gap: 0px;
-	opacity: 0px;
 	display: flex;
-	align-items: right;
 }
 
 .contact {
 	width: 195px;
 	height: 48px;
 	gap: 0px;
-	opacity: 0px;
 	background: #F77F00;
 	align-items: center;
 	display: flex;
@@ -202,12 +257,11 @@ a {
 	height: 26px;
 	top: 11px;
 	gap: 0px;
-	opacity: 0px;
 	display: flex;
 }
 
 .hero {
-	background-color: linear-gradient(180deg, #EAE2B7 0%, #FCBF49 100%);
+	background: linear-gradient(180deg, #EAE2B7 0%, #FCBF49 100%);
 	height: 100%;
 	display: flex;
 	background-image: url(../reparation/assets/outils.png);
@@ -223,7 +277,6 @@ h1 {
 	width: 50%;
 	height: 50%;
 	font-size: 60px;
-	font: 'Nico Moji';
 	text-align: center;
 }
 
@@ -245,7 +298,7 @@ h1 {
 	align-items: flex-start;
 	position: absolute;
 	top: 92%;
-	background-color: linear-gradient(180deg, #EAE2B7 0%, #FCBF49 100%);
+	background: linear-gradient(180deg, #EAE2B7 0%, #FCBF49 100%);
 }
 
 
@@ -285,6 +338,7 @@ h1 {
 }
 
 .search-container {
+
 	margin-top: 3px;
 }
 
@@ -301,7 +355,6 @@ h1 {
 }
 
 .search-form {
-	display: flex;
 	width: 300px;
 }
 
@@ -374,7 +427,6 @@ h5 {
 	top: 5px;
 	gap: 0px;
 	border-radius: 20px 0px 0px 0px;
-	opacity: 0px;
 	margin: 10%;
 	grid-row: 2;
 	grid-column: 1;
@@ -390,12 +442,12 @@ h5 {
 .contact-form {
 	align-self: center;
 	background-color: #f7ab07;
-	padding: -2%;
+	padding: 5%;
 	border-radius: 5px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-	width: 100%;
+	width: 80%;
 	max-width: 620px;
-	margin: 3%;
+	margin: 16%;
 }
 
 .contact-form h2 {
@@ -403,7 +455,7 @@ h5 {
 }
 
 .contact-form .form-group {
-	margin-bottom: 15px;
+	margin-bottom: 40px;
 }
 
 .contact-form .form-group label {
@@ -503,4 +555,103 @@ h9 {
 	filter: brightness(100%);
 	opacity: 1;
 	z-index: 2;
+}
+
+@media (max-width:360px) {
+	.bandeau {
+		width: 135vw;
+		height: 10vh;
+		padding: 0px 20px 0px 20px;
+		gap: 0px;
+		justify-content: space-between;
+
+	}
+
+	.nav {
+		display: none;
+	}
+
+	.block {
+		display: none;
+	}
+
+	.logo {
+		display: none;
+	}
+
+	.logo1 {
+		display: flex;
+		width: 103px;
+		height: 77px;
+		padding: 0px 30px 0px 30px;
+		border-radius: 40px 0px 0px 0px;
+
+	}
+
+	.recherche {
+		display: none;
+		width: 40%;
+		justify-content: center;
+		align-items: flex-start;
+	}
+
+	.sidenav {
+		display: flex;
+	}
+
+	.burger-icon span {
+		display: flex;
+	}
+
+	.hero {
+		display: flex;
+		width: 135vw;
+		height: 220px;
+
+	}
+
+	h1 {
+		font-family: "Unlock";
+		font-size: 20px;
+		letter-spacing: -0.02em;
+		text-align: center;
+	}
+
+	.qui {
+		width: 135vw;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.video {
+		width: 400px;
+		height: 257px;
+		border-radius: 20px;
+		display: flex;
+		justify-self: center;
+
+	}
+
+	h4 {
+		font-size: 30px;
+	}
+
+	.help {
+		width: 135vw;
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+		justify-content: center;
+	}
+
+	.carte {
+		width: 40vw;
+		align-items: flex-start;
+	}
+
+	.carousel {
+		display: flex;
+		width: 135vw;
+
+	}
 }
