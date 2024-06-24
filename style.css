@@ -558,6 +558,7 @@ h9 {
 }
 
 @media (max-width:800px) {
+
 	.bandeau {
 		height: 10vh;
 		padding: 0px 20px 0px 20px;
@@ -592,9 +593,11 @@ h9 {
 		justify-content: center;
 		align-items: flex-start;
 	}
-.video{
-	width: 125vw;
-}
+
+	.video {
+		width: 90vw;
+	}
+
 	.sidenav {
 		display: flex;
 	}
